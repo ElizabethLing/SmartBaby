@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.administrator.smartbaby.MainActivity">
+<LinearLayout
+    android:id="@+id/linearLayout_content"
+    android:layout_height="300dp"
+    android:layout_width="fill_parent">
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_height="300dp"
+        android:layout_width="fill_parent" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/button_play"
+        android:layout_height="300dp"
+        android:layout_width="fill_parent"
+        android:background="#fffeee"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        android:layout_below="@id/linearLayout_content" />
+
+
+    <LinearLayout
+        android:id="@+id/title_inner_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="bottom|center_horizontal"
+        android:layout_alignParentBottom="true">
+
+            <ImageButton
+                android:id="@+id/menu_monitor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/monitor"
+                />
+            <ImageButton
+                android:id="@+id/menu_statistics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/statistics"
+                />
+            <ImageButton
+                android:id="@+id/menu_interactive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/interactive"
+                />
+            <ImageButton
+                android:id="@+id/menu_mine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:src="@mipmap/mine"
+                />
+        </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/alarm_p"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/alarm"
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="宝宝的状态"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/alarm_p"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时间："
+        android:id="@+id/item_t"
+        android:textSize="15dp"
+        android:layout_below="@+id/item_name"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/item_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:id="@+id/item_time"
+        android:textSize="15dp"
+        android:layout_below="@+id/item_name"
+        android:layout_toRightOf="@id/item_t"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提醒："
+        android:id="@+id/item_s"
+        android:textSize="15dp"
+        android:layout_below="@+id/item_t"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/item_name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="加辅食"
+        android:id="@+id/item_suggest"
+        android:textSize="15dp"
+        android:layout_below="@+id/item_time"
+        android:layout_toRightOf="@id/item_t"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/alarm_state_picture"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/aweak"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_centerVertical="true" />
+
+</RelativeLayout>
