@@ -4,28 +4,16 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     tools:context="com.example.administrator.smartbaby.MainActivity">
-<LinearLayout
-    android:id="@+id/linearLayout_content"
-    android:layout_height="300dp"
-    android:layout_width="fill_parent">
     <VideoView
         android:id="@+id/videoView"
-        android:layout_height="300dp"
-        android:layout_width="fill_parent" />
-    </LinearLayout>
-    <Button
-        android:id="@+id/button_play"
-        android:layout_height="300dp"
-        android:layout_width="fill_parent"
-        android:background="#fffeee"/>
-
-    <TextView
-        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_width="match_parent" />
+    <EditText
+        android:id="@+id/url"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:layout_below="@id/linearLayout_content" />
-
-
+        android:layout_width="match_parent"
+        android:layout_below="@id/videoView"
+        />
     <LinearLayout
         android:id="@+id/title_inner_layout"
         android:layout_width="match_parent"
